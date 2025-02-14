@@ -4,14 +4,19 @@ This is a console-based voting system created as part of a hackathon with a team
 **Technologies Used:**
 
 C Programming Language and Concepts
+
 Structs and Arrays
+
 File Handling
 
 **Features:**
 
 _Candidate Display:_ Shows candidate details (ID, name, and party name).
+
 _Vote Casting:_ Allows users to vote by entering a candidate’s ID, with input validation. The vote is recorded in a file.
+
 _Results Display:_ Calculates and displays the total votes for each candidate, storing the results in a file.
+
 _Data Persistence:_ Uses file handling to save voter information, candidate details, and election results.
 
 **How to Use:**
