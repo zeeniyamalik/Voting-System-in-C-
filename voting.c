@@ -9,11 +9,9 @@ struct VotingSystemRecord{
     int candidateID;
     char candidateName[100];
     char partyAffiliation[50];
-    int votesRecieved;
 };
 
 struct VotingSystemRecord s;
-int countA=0, countB=0, countC=0;
 
 void displayCandidateDetails(){
     printf("\n\t\t\t----CANDIDATE DETAILS----\t\t\n\n");
@@ -21,8 +19,6 @@ void displayCandidateDetails(){
     printf("\t  101\t\tGEORGE BUSH\t\tParty A\n\n");
     printf("\t  102\t\tDONALD TRUMP\t\tParty B\n\n");
     printf("\t  103\t\tJOE BIDEN\t\tParty C\n\n");
-
-
     }
 
 void castVote(){
@@ -32,15 +28,12 @@ void castVote(){
         return;
     }
 
-
     //FOR NUMBER OF VOTERS
     printf("\n\n\t\t\t----CAST VOTES----");
-    // int votersNo;
-    // printf("\n\nEnter the no. of Voters: ");
-    // scanf("%d", &votersNo);
 int n=1, i=0;
+    
     while(n!=0){
-        i++;                                //to keep track of the loop iteration
+        i++;    //to keep track of the loop iteration
     printf("\nEnter your Voter ID: ");
     scanf("%d", &s.voterID);
     getchar();
@@ -57,7 +50,7 @@ int n=1, i=0;
     scanf("%d", &n);
 
     if(n==0 && i<=1){
-        n=1;                                //to handle the while loop's condition efficiently
+        n=1;    //turning 'n' true to keep while loop's condition valid (line 35)
             printf("\n\nSORRY! AT LEAST 2 VOTES ARE NEEDED!\n");
             continue;
             }
